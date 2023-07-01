@@ -1,0 +1,315 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.header {
+    display: flex;
+    height: 50px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(133, 126, 126);
+}
+.header__nav {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.header__nav_link {
+    color: rgb(104, 102, 102);
+    padding: 8px;
+    transition: 0.3s;
+    position: relative; /* буде головним */
+}
+.header__nav_link:hover::before{
+    height: 100%;
+}
+.header__nav_link::before{
+    position: absolute;
+    content: '';
+    width: 4%;
+    height: 0%;
+    background-color: rgb(243, 25, 25);
+    bottom: 0;
+    left: -4px;
+    transition: 0.7s;
+}
+.header__nav_link:hover:after{
+    height: 100%;
+}
+.header__nav_link::after{
+    position: absolute;
+    content: '';
+    width: 4%;
+    height: 0%;
+    background-color: rgb(243, 25, 25);
+    top: 0;
+    right: -4px;
+    transition: 0.7s;
+}
+.main__div {
+    width: 330px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.main__div-p {
+    font-size: 25px;
+    font-family: 'Kaushan Script', cursive;
+}
+.main__div-h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 30px;
+    padding: 10px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.main__div-div {
+    width: 80px;
+    height: 4px;
+    background-color: rgb(173, 67, 43);
+    border-radius: 5px;
+}
+main{
+}
+.benefit {
+    display flex: ;
+    margin-top: 50px;
+}
+.benefit__box-1 {
+
+    display: flex;
+    align-items: center;
+    flex-direction: s;
+    justify-content: space-around;
+}
+.box_card {
+    width: 350px;
+    display: flex;
+    height: 76px;
+    position: relative;
+}
+.box_card::after{
+    width: 0%;
+    height: 120%;
+    background-color: rgba(5, 5, 118, 0.505);
+    position: absolute;
+    content: '';
+    left: -10px;
+    top: -5px;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+.box_card:hover::after{
+    width: 105%;
+}
+
+.card_img {
+
+}
+.card_text {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.benefit__box-2 {
+
+    display: flex;
+    align-items: center;
+    flex-direction: s;
+    justify-content: space-around;
+    margin-top: 75px;
+}
+.card__h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+.card__p {
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+    font-weight: 400;
+}
+.main__div-2 {
+    width: 400px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.main__div-p-2 {
+    font-size: 25px;
+    font-family: 'Kaushan Script', cursive;
+}
+.main__div-h1-2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 30px;
+}
+.main__div-div-2 {
+    width: 80px;
+    height: 4px;
+    background-color: rgb(173, 67, 43);
+    border-radius: 5px;
+}
+.seller_text {
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.seller_text_p {
+    color: gray;
+}
+body{
+    background-image: url(./завантаження.jpg);
+    background-size: cover;
+    backdrop-filter: blur(7px);
+}
+.second_infoblock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.block_card {
+}
+.b-card_img-1 {
+    width: 220px;
+    height: 320px;
+    background-image: url(./завантаження\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #000;
+    border-radius: 15px;
+    border: 1px solid #000;
+    position: relative;
+}
+.b-card_text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 15px;
+}
+.b-text_h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+.b-text_p {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+.b-card_img-2{
+    width: 220px;
+    height: 320px;
+    background-image: url(./завантаження\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    border: 1px solid #000;   
+    position: relative; 
+}
+.b-card_img-3 {
+    width: 220px;
+    height: 320px;
+    background-image: url(./завантаження\ \(3\).jpg);
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 1px solid #000;
+}
+.b-card_img-3::after{
+    position: absolute;
+    background-color: rgba(243, 160, 6, 0.54);
+    width: 100%;
+    height: 0%;
+    content: '';
+    transition: 0.6s;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+.b-card_img-3:hover::after{
+    height: 100%;
+}.b-card_img-2 {
+    width: 220px;
+    height: 320px;
+    background-image: url(./завантаження\ \(2\).jpg);
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 1px solid #000;
+}
+.b-card_img-2::after{
+    position: absolute;
+    background-color: rgba(243, 160, 6, 0.54);
+    width: 100%;
+    height: 0%;
+    content: '';
+    transition: 0.6s;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+.b-card_img-2:hover::after{
+    height: 100%;
+}
+.b-card_img-1 {
+    width: 220px;
+    height: 320px;
+    background-image: url(./завантаження\ \(1\).jpg);
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 1px solid #000;
+}
+.b-card_img-1::after{
+    position: absolute;
+    background-color: rgba(243, 160, 6, 0.54);
+    width: 100%;
+    height: 0%;
+    content: '';
+    transition: 0.6s;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+.b-card_img-1:hover::after{
+    height: 100%;
+}
